@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  passage_gc:
+    image: assembly/passage-gc:latest
+    container_name: passage-gc
+    restart: always
+    environment:
+      - SERVER_PORT=8083
+    ports:
+      - "8083:8083"
